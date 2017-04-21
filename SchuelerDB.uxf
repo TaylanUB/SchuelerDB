@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>100</y>
+      <w>300</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Student
+--
+- id: int
+- firstname: String
+- lastname: String
+- birthDate: Date
+- address: Address
+- subjects: List&lt;SubjectStudent&gt;
+--
++ getID(): int
++ getName(): String
++ getLastName(): String
++ getFirstName(): String
++ getAddress(): Address
++ setAddress(address: Address): void
++ getBirthDate(): Date
++ getAge(): int
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>100</y>
+      <w>260</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Subject
+--
+- id: int
+- name: String
+- students: List&lt;SubjectStudent&gt;
+--
++ getID(): int
++ getName(): String
++ getStudents(): List&lt;Student&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>100</y>
+      <w>210</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>SubjectStudent
+--
+- id: int
+- subject: Subject
+- student: Student
+- mark: int
+--
++ getID(): int
++ getSubject(): Subject
++ getStudent(): Student
++ setMark(int): void
++ getMark(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>100</y>
+      <w>180</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>Address
+--
+- street: String
+- zipcode: String
+- city: String
+--
++ getStreet(): String
++ getZipcode(): String
++ getCity(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>530</y>
+      <w>220</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>_jane: Student_
+--
+id: Long = 1
+lastname: String = "Doe"
+firstname: String = "Jane"
+birthDate: Date = 2000-01-01
+address: Address
+subjects: Subject[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>390</y>
+      <w>130</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>530</y>
+      <w>220</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>_john: Student_
+--
+id: Long = 2
+lastname: String = "Doe"
+firstname: String = "John"
+birthDate: Date = 2000-01-01
+address: Address
+subjects: Subject[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>390</y>
+      <w>130</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>120</x>
+      <y>70</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Aufgabe 1b
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>50</x>
+      <y>500</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Aufgabe 1e
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
